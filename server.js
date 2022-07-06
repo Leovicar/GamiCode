@@ -368,8 +368,8 @@ async function sendMail(email) {
             from: 'gamicode.noreply@gmail.com',
             to: email,
             subject: 'Projet',
-            text: 'Votre projet a bien été ajouté! Félicitation',
-            html: '<h1>Hello from gmail email using API</h1>',
+            text: 'Votre projet a été ajouté',
+            html: '<h3>Félicitations ! Votre projet a bien été ajouté sur GamiCode ! </h3>',
         };
 
         const result = await transport.sendMail(mailOptions);
